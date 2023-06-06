@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Alta Incidencias</title>
+</head>
+<body>
+<h1>Alta Incidencias</h1>
+<form th:action="@{/Incidencia/alta}" method="post" th:object="${incidencia}">
+  <input type="number" id="incidenciaId" th:field="*{incidenciaId}" hidden>
+  <label>Fecha</label>
+  <input type="text" id="usuario" th:field="*{usuario}" required>
+  <label></label>servicio</label>
+
+</form>
+
+</body>
+</html>
